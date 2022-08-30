@@ -7,9 +7,9 @@ echo "\ \      /  (_)  _ __  |_ _| _ __   ___ | |_  __ _ | || |"
 echo " \ \ /\ / / | | | '_ \  | | | '_ \ / __|| __|/ _` || || |"
 echo "  \ V  V /  | | | | | | | | | | | \ __ \\ ||  (_| || || |"
 echo "   \_/\_/   |_| |_| |_||___||_| |_||___/ \__|\__,_||_||_|"
-echo.
+echo. 
 echo Bienvenue sur WinInstall !
-echo.
+echo. 
 echo 1. Installation automatique
 echo 2. Installation manuelle
 echo.
