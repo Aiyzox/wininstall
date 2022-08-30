@@ -1,2 +1,2 @@
 # WinInstall
-A tool to do an windows after install automatically
+WinInstall est un script qui permet d'automatiser la post-installation de windows
