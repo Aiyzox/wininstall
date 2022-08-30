@@ -17,6 +17,7 @@ set choix=
 set /p choix= Merci de bien vouloir faire un choix : 
 if %choix% == 1 goto break
 if %choix% == 2 goto manual
+goto break
 
 :manual
 cls
