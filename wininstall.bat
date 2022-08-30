@@ -15,8 +15,8 @@ echo 2. Installation manuelle
 echo.
 set choix=
 set /p choix= Merci de bien vouloir faire un choix : 
-if choix == 1 goto auto
-if choix == 2 goto manual
+if %choix% == 1 goto break
+if %choix% == 2 goto manual
 
 :manual
 cls
@@ -26,3 +26,6 @@ echo.
 set /p choix= Merci de bien vouloir faire un choix : 
 ::debug
 echo %choix%
+
+:break
+exit /b
