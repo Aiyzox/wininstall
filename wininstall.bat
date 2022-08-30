@@ -15,4 +15,14 @@ echo 2. Installation manuelle
 echo.
 set choix=
 set /p choix= Merci de bien vouloir faire un choix : 
+if choix == 1 goto auto
+if choix == 2 goto manual
+
+:manual
+cls
+echo 1. Installation des visual c++
+echo 0. retour au menu principal
+echo.
+set /p choix= Merci de bien vouloir faire un choix : 
+::debug
 echo %choix%
