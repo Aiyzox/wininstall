@@ -1,2 +1,2 @@
 # wininstall
-A tool to di an windows after install automatically
+A tool to do an windows after install automatically
