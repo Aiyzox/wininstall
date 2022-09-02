@@ -76,5 +76,9 @@ start /wait ./bin/vcredist2015_2017_2019_2022_x86.exe /passive /norestart
 start /wait ./bin/vcredist2015_2017_2019_2022_x64.exe /passive /norestart
 if "%mode%"=="manual" goto manual
 
+:winget
+start winget install --id=Mozilla.Firefox  -e
+
+
 :break
 exit /b
