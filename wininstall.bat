@@ -78,7 +78,9 @@ if "%mode%"=="manual" goto manual
 
 :winget
 start winget install --id=Mozilla.Firefox -e
-
+start winget install --id=7zip.7zip  -e
+start winget install --id=VideoLAN.VLC  -e
+start winget install --id=SumatraPDF.SumatraPDF  -e
 
 :break
 exit /b
