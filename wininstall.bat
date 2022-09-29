@@ -27,11 +27,13 @@ goto break
 cls
 set mode=manual
 echo 1. Installation des visual c++
+echo 2. Installation des applications recommandées
 echo 0. retour au menu principal
 echo.
 set /p choix= Merci de bien vouloir faire un choix : 
 if %choix% == 0 goto start
 if %choix% == 1 goto c++
+if %choix% == 2 goto winget
 goto break
 
 :c++
