@@ -83,6 +83,7 @@ cls
 timeout 3
 cls
 echo Installation des applications recommandées...
+start /wait ./bin/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 winget install --id=Mozilla.Firefox.ESR -e  && winget install --id=7zip.7zip -e  && winget install --id=VideoLAN.VLC -e  && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=Microsoft.dotNetFramework -e  && winget install --id=Notepad++.Notepad++ -e 
 if "%mode%"=="manual" goto manual
 
