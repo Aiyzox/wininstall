@@ -77,10 +77,12 @@ start /wait ./bin/vcredist2015_2017_2019_2022_x64.exe /passive /norestart
 if "%mode%"=="manual" goto manual
 
 :winget
-start winget install --id=Mozilla.Firefox -e
-start winget install --id=7zip.7zip  -e
-start winget install --id=VideoLAN.VLC  -e
-start winget install --id=SumatraPDF.SumatraPDF  -e
+cls
+timeout 3
+cls
+echo Installation des applications recommandées...
+winget install --id=Mozilla.Firefox.ESR -e  && winget install --id=7zip.7zip -e  && winget install --id=VideoLAN.VLC -e  && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=Microsoft.dotNetFramework -e  && winget install --id=Notepad++.Notepad++ -e 
+if "%mode%"=="manual" goto manual
 
 :break
 exit /b
