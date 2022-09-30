@@ -85,7 +85,12 @@ cls
 echo Installation des applications recommandees...
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 pause
-winget install --id=Mozilla.Firefox.ESR -e  && winget install --id=7zip.7zip -e  && winget install --id=VideoLAN.VLC -e  && winget install --id=SumatraPDF.SumatraPDF -e  && winget install --id=Microsoft.dotNetFramework -e  && winget install --id=Notepad++.Notepad++ -e 
+choco install firefox
+choco install 7zip
+choco install vlc
+choco install sumatrapdf
+choco install dotnet
+choco install notepadplusplus
 if "%mode%"=="manual" goto manual
 
 :break
