@@ -84,13 +84,12 @@ timeout 3
 cls
 echo Installation des applications recommandees...
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-pause
-choco install firefox
-choco install 7zip
-choco install vlc
-choco install sumatrapdf
-choco install dotnet
-choco install notepadplusplus
+choco install firefox -y
+choco install 7zip -y
+choco install vlc -y
+choco install sumatrapdf -y
+choco install dotnet -y
+choco install notepadplusplus -y
 if "%mode%"=="manual" goto manual
 
 :break
